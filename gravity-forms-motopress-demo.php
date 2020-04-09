@@ -1,11 +1,11 @@
 <?php
 /*
 * Plugin Name: MotoPress Gravity Forms
-* Plugin URI: https://gravityview.co
+* Plugin URI: https://katz.co
 * Description: Use Gravity Forms to register sites instead of MotoPress Demo Builders' built-in registration.
 * Version: 1.0
-* Author: GravityView
-* Author URI: https://gravityview.co
+* Author: Katz Web Services, Inc.
+* Author URI: https://katz.co
 * License: GPLv2 or later
 * Text Domain: gf-motopress
 * Domain Path: /languages
