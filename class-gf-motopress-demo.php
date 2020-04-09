@@ -1,9 +1,14 @@
 <?php
 
+// Make sure Gravity Forms is active and already loaded.
+if ( ! class_exists( 'GFForms' ) ) {
+	die();
+}
+
 // The Add-On Framework is not loaded by default.
 GFForms::include_feed_addon_framework();
 
-class GF_MotoPress extends GFFeedAddon {
+class GF_MotoPress_Demo extends GFFeedAddon {
 
 	protected $_multiple_feeds = false;
 
@@ -11,7 +16,7 @@ class GF_MotoPress extends GFFeedAddon {
 	// They are defined in GFAddOn and should be overridden.
 
 	// The version number is used for example during add-on upgrades.
-	protected $_version = GF_MOTOPRESS_VERSION;
+	protected $_version = GF_MOTOPRESS_DEMO_VERSION;
 
 	// The Framework will display an appropriate message on the plugins page if necessary
 	protected $_min_gravityforms_version = '2.0';
@@ -48,7 +53,7 @@ class GF_MotoPress extends GFFeedAddon {
 	public static function get_instance() {
 
 		if ( self::$_instance == null ) {
-			self::$_instance = new GF_MotoPress();
+			self::$_instance = new GF_MotoPress_Demo();
 		}
 
 		return self::$_instance;

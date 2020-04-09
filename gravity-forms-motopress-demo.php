@@ -12,11 +12,11 @@
 * Network: True
 */
 
-define( 'GF_MOTOPRESS_VERSION', '0.1' );
+define( 'GF_MOTOPRESS_DEMO_VERSION', '0.1' );
 
-add_action( 'gform_loaded', 'register_gf_motopress' );
+add_action( 'gform_loaded', 'register_gf_motopress_demo' );
 
-function register_gf_motopress() {
+function register_gf_motopress_demo() {
 
 	if ( ! class_exists( 'GFForms' ) ) {
 		return;
@@ -26,7 +26,7 @@ function register_gf_motopress() {
 		return;
 	}
 
-	require_once plugin_dir_path( __FILE__ ) . 'class-gf-motopress.php';
+	require_once plugin_dir_path( __FILE__ ) . 'class-gf-motopress-demo.php';
 
-	GFAddon::register( 'GF_MotoPress' );
+	GFAddon::register( 'GF_MotoPress_Demo' );
 }
