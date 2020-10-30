@@ -58,6 +58,15 @@ class GF_MotoPress_Demo extends GFFeedAddon {
 
 		return self::$_instance;
 	}
+	
+	/**
+	 * Override this function to customize the form settings icon
+	 * 
+	 * @since 1.0.1
+	 */
+	public function get_menu_icon() {
+		return 'dashicons-networking';
+	}
 
 	/**
 	 * Prepare settings to be rendered on feed settings tab.
@@ -120,7 +129,7 @@ class GF_MotoPress_Demo extends GFFeedAddon {
 
 		foreach ( $sites as $site_id ) {
 			$choices[] = array(
-				'label' => get_blog_option( $site_id, 'blogname' ),
+				'label' => get_blog_option( $site_id, 'blogname' ) . ' (' . $site_id . ')',
 				'value' => $site_id,
 			);
 		}
