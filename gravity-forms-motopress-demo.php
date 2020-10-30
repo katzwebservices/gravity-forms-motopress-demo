@@ -3,7 +3,7 @@
 * Plugin Name: MotoPress Gravity Forms
 * Plugin URI: https://katz.co
 * Description: Use Gravity Forms to register sites instead of MotoPress Demo Builders' built-in registration.
-* Version: 1.0
+* Version: 1.0.1
 * Author: Katz Web Services, Inc.
 * Author URI: https://katz.co
 * License: GPLv2 or later
@@ -12,7 +12,7 @@
 * Network: True
 */
 
-define( 'GF_MOTOPRESS_DEMO_VERSION', '0.1' );
+define( 'GF_MOTOPRESS_DEMO_VERSION', '1.0.1' );
 
 add_action( 'gform_loaded', 'register_gf_motopress_demo' );
 
